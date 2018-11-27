@@ -1,0 +1,13 @@
+@import "../../assets/scss/variables";
+
+.search-bar {
+  grid-area: $searchBar;
+
+  .ui.input input {
+    background-color: #545454;
+  }
+}
+
+.ui.stacked.segment {
+  background-color: transparent;
+}

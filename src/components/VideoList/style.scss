@@ -1,0 +1,16 @@
+@import "../../assets/scss/variables";
+
+.video-list {
+  background: #ebebeb;
+  grid-area: $videoList;
+  padding: 15px;
+
+  &.wait {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  @media (min-width: $desktop) {
+    width: 30vw;
+  }
+}

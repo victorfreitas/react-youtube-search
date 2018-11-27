@@ -1,0 +1,20 @@
+@import "../../assets/scss/variables";
+
+.container {
+  grid-template-areas:
+    '#{$searchBar} #{$searchBar} #{$searchBar} #{$searchBar}'
+    '#{$videoPlayer} #{$videoPlayer} #{$videoPlayer} #{$videoList}'
+    '#{$videoPlayer} #{$videoPlayer} #{$videoPlayer} #{$videoList}'
+    '. #{$messageError} #{$messageError} .';
+  display: grid;
+}
+
+@media (max-width: $desktop) {
+  .container {
+    grid-template-areas:
+      '#{$searchBar} #{$searchBar} #{$searchBar} #{$searchBar}'
+      '#{$videoPlayer} #{$videoPlayer} #{$videoPlayer} #{$videoPlayer}'
+      '#{$videoList} #{$videoList} #{$videoList} #{$videoList}'
+      '. #{$messageError} #{$messageError} .';
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../assets/scss/variables';
+
+.video-player {
+  grid-area: $videoPlayer;
+
+  .ui.test.ad {
+    background-image: url(../../assets/icons/ytbg.jpg);
+    background-repeat: repeat;
+    border: 1px solid #333;
+  }
+
+  .advertisement {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .player-wrapper {
+    padding-top: 56.25%;
+    position: relative;
+  }
+
+  .react-player {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 70vw;
+  }
+}
